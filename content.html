@@ -21,15 +21,23 @@ wap" rel="stylesheet">
     <div class="header-container w-container">
       <div class="site">
         <a href="index.html">
-          <img src="img/logo.svg" alt="Boars" width="135" height="26">
+          <img src="img/logo.svg" alt="Boards" width="135" height="26">
         </a>
       </div>
 
-      <button class="navbtn">
-        <i class="fas fa-bars">
-          <span class="sr-only">MENU</span>
-        </i>
+      <button class="navbtn" onClick="document.querySelector('html').classList.toggle('open')">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>
+        <span class="sr-only">MENU</span>
       </button>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="content.html">サービス案内</a></li>
+          <li><a href="">お問い合わせ</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
